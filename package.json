@@ -8,13 +8,14 @@
     "dist/**/*"
   ],
   "scripts": {
-    "build": "rollup --config --environment NODE_ENV:production"
+    "build": "rollup --config --environment NODE_ENV:production",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/craigbuckler/datalist-css.git"
   },
-  "homepage": "https://github.com/craigbuckler/datalist-css#readme",
+  "homepage": "https://maksimbykov.github.io/datalist-css",
   "bugs": {
     "url": "https://github.com/craigbuckler/datalist-css/issues"
   },
@@ -26,5 +27,8 @@
     "style"
   ],
   "author": "Craig Buckler",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
