@@ -24,12 +24,16 @@ label, button {
 }
 
 /* <datalist> and <option> styling */
-datalist {
+datalist:hover, datalist:focus {
   position: absolute;
   max-height: 20em;
   border: 0 none;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+datalist {
+  display: none;
 }
 
 datalist option {
